@@ -1,0 +1,17 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "curso ob typeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "curso",
+    "ob"
+  ],
+  "author": "@sandokan",
+  "license": "ISC"
+}
