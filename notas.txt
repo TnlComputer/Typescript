@@ -1,0 +1,66 @@
+TYPESCRIPT  
+
+- instalacion y configuracion
+----------------------------------------------------------------
+
+instalamos
+node y npm
+
+instalamos las dependencias  de desarrollo que necesitamos para trabajar
+
+npm i --save-dev @types/node nodemon ts-node typescript 
+
+npm i --save-dev rimraf // herramienta para compilar
+
+para compilar con ts
+
+npx tsc --init
+ --rootDir src // donde guarda los programas de desarrollo
+
+ --outDir build // donde guarda cuando compilemos para produccion
+
+ --esModuleInterop // le decimos que version tenemos en este modulo, por defecti es true
+
+ --resolveJsonModule //podemos utilizar archivos Json
+
+ --lib es6 // es la libreria que usamos, en este caso es EMScript6
+
+ --module commonjs
+ --allowjs true // permite que js conviva con ts
+
+ --noImplicitAny true // permite todos los tipos de Js
+
+
+esto crea el tsconfig.Json
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+extensiones de TS muy necesarias
+
+eslint
+EMScript6
+typeScript intellicense
+importScript int
+todo
+todo tree
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+script para el package.Json
+
+    "ts-node": "cd src && ts-node index.ts",
+    "start": "nodemon",
+    "transpilation": "tsc",
+    "build:prod": "rimraf ./build && tsc",
+    "start:prod": "npm run build:prod && node build/index.js"
+
+
+------------------------------------------------------------
+
+typescript es tipado inferido (fuerte)
+
+
+si haces una variable  
+var nombre: string = "martin"; eso es una variable fuerte y tiene que ser string siempre el dato.
