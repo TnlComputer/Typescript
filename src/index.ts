@@ -116,3 +116,28 @@ console.log(coche.anio < 2010 ? `Coche: ${coche.nombre} es viejo` :  `Coche: ${c
 if (error ){}
 
 
+// Funciones
+
+/**
+ * Funcion qu muestra un saliudo por consola
+ */
+function saludar() {
+  let nombre = "Jorge";
+  console.log(`Hola, ${nombre}!`); 
+}
+
+// invocacion de la funcion
+saludar();
+function saludarPersona(nombre: string) {
+    console.log(`Hola, ${nombre}!`); 
+  
+}
+
+// invocacion de la funcion
+saludar();
+function saludarOpcional(nombre?: string | undefined) {
+    console.log(`Hola, ${nombre}!`); 
+  
+}
+
+
